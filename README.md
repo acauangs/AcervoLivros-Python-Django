@@ -1,9 +1,8 @@
-<h2>Acervo Digital de Livros<h2>
+<h1>Acervo Digital de Livros<h1>
 
-<div>
-    <p>A aplicação é um informativo sobre livros, onde é possível cadastras Livros, Autores, Formato do livro, Editoras entre outros!</p>
-</div>
 
+<hr>
+<p>A aplicação é um informativo sobre livros, onde é possível cadastras Livros, Autores, Formato do livro, Editoras entre outros!</p>
 <hr>
 
 <h3><u>Tecnologias Usadas:</h3>
@@ -19,7 +18,7 @@
     <ul>
         <li>Faça download do arquivo completo disponível a cima.</li>
         <li>Nave pelo seu terminal de comandos até a pasta “AcervoLivros-Python-Django-main”</li>
-        <li>Execute o comando py manage.py runserver</li>
+        <li>Execute o comando: py manage.py runserver</li>
         <li>Acessar a aplicação pelo navegador no endereço http://127.0.0.1:8000/</li>
     </ul>
 
