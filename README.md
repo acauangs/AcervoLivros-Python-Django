@@ -19,7 +19,7 @@
         <li>Faça download do arquivo completo disponível a cima.</li>
         <li>Nave pelo seu terminal de comandos até a pasta “AcervoLivros-Python-Django-main”</li>
         <li>Execute o comando: py manage.py runserver</li>
-        <li>Acessar a aplicação pelo navegador no endereço http://127.0.0.1:8000/</li>
+        <li>Acessar a aplicação pelo navegador no endereço 127.0.0.1:8000/</li>
     </ul>
 
 <h3>Imagens:</h3>
