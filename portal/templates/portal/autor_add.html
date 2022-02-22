@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="card">
+        <div class="card-body">
+                <h4>ADICIONAR AUTOR</h4>
+                <hr>
+                <form action="{% url 'autor_add' %}" method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button class= "btn btn-success" type="submit">Salvar</button>
+                    <a href="{% url 'autor' %}" class="btn btn-danger">Cancelar</a>
+                </form>
+        </div>
+    </div>
+{% endblock %}

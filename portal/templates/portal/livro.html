@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %} LIVROS {% endblock %}
+
+{% block content %}
+<div class="card">
+      <div class="card-body">
+            <h4>LIVROS</h4>
+            <hr>
+            <a class="btn btn-success" href="{% url 'livro_add' %}">Adicionar</a>
+            <table class="table table-striped">
+                  <thead>
+                        <tr>
+                              <th>Titulo</th>
+                              <th>Subtitulo</th>
+                              <th>Autor</th>
+                              <th>Editora</th>
+                              <th>Formato</th>
+                              <th>Data lançamento</th>
+                              <th>Número de paginas</th>
+                        </tr>
+                  </thead>
+                  <tbody>
+                        {% for item in livro %}
+                        <tr>
+                              <td>{{ item.titulo }}</td>
+                              <td>{{ item.subtitulo }}</td>
+                              <td>{{ item.autor }}</td>
+                              <td>{{ item.editora }}</td>
+                              <td>{{ item.formato }}</td>
+                              <td>{{ item.data_lancamento }}</td>
+                              <td>{{ item.numero_paginas }}</td>
+                              <td>     
+                              <a class="btn btn-warning" href="{% url 'livro_edit' item.id %}">Editar</a>
+                                    <a class="btn btn-danger" href="{% url 'livro_delete' item.id %}"
+                                    onclick="return confirm('Tem certeza que deseja excluir esse Livro?')">Excluir</a>
+                              </td>
+                        </tr>
+                        {% endfor %}
+                  </tbody> 
+            </table>
+      </div>
+</div>
+
+{% endblock %}

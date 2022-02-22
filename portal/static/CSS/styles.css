@@ -1,0 +1,25 @@
+body#fundo{
+    background-color: rgba(247, 247, 196, 0.24)
+
+}
+
+/* barra de navegação*/
+nav#navbar{
+    background-color: rgba(255, 166, 0, 0.836);
+    padding-left: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(247, 247, 196);
+    font-size: bolder;
+}
+
+/* Inicio da pagina home*/
+div#inicio{
+    max-width: 1200px;
+    min-height: 600px;
+    margin: auto;
+    box-shadow: 2px 2px 2px rgb(247, 247, 196);
+    border-radius: 5px;
+    padding: 10%;
+}
+
+
